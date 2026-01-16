@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ved</title>
+
+    <style>
+        body {
+            background: rgb(1, 1, 50);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: rgba(31, 31, 133, 0.844);
+            height: 80px;
+        }
+
+        nav a { color: white; text-decoration: none; }
+
+        .container {
+            width: 60%;
+            margin: auto;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        input, textarea {
+            width: 80%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            padding: 12px 20px;
+            background: #1e2167;
+            border: 2px solid white;
+            font-size: 18px;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Me</h1>
+
+        <h3>Email:</h3>
+        <p style="color: rgb(144,104,184); font-size: 18px;">
+            vedshamringne2603@gmail.com
+        </p>
+
+        <h3>Send a Message</h3>
+
+        <form>
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <textarea rows="5" placeholder="Your Message"></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
