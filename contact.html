@@ -4,78 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Ved</title>
-
-    <style>
-        body {
-            background: rgb(1, 1, 50);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background: rgba(31, 31, 133, 0.844);
-            height: 80px;
-        }
-
-        nav a { color: white; text-decoration: none; }
-
-        .container {
-            width: 60%;
-            margin: auto;
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        input, textarea {
-            width: 80%;
-            padding: 12px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: none;
-        }
-
-        button {
-            padding: 12px 20px;
-            background: #1e2167;
-            border: 2px solid white;
-            font-size: 18px;
-            color: white;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Contact | Ved Ringne</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Contact Ved Ringne to discuss web development, ML projects, and opportunities.">
 </head>
 
 <body>
-
     <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <div class="brand">Ved Ringne</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
+    <main class="container">
+        <h1 class="page-title">Get In Touch</h1>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Drop me an email at:</h3>
+                <a href="mailto:vedshamringne2603@gmail.com">vedshamringne2603@gmail.com</a>
+                <h3 style="margin-top: 20px;">Connect on LinkedIn:</h3>
+                <a href="https://www.linkedin.com/in/ved-ringne-b67482291/" target="_blank">LinkedIn Profile</a>
+            </div>
 
-    <div class="container">
-        <h1>Contact Me</h1>
-
-        <h3>Email:</h3>
-        <p style="color: rgb(144,104,184); font-size: 18px;">
-            vedshamringne2603@gmail.com
-        </p>
-
-        <h3>Send a Message</h3>
-
-        <form>
-            <input type="text" placeholder="Your Name" required><br>
-            <input type="email" placeholder="Your Email" required><br>
-            <textarea rows="5" placeholder="Your Message"></textarea><br>
-            <button type="submit">Send</button>
-        </form>
-    </div>
-
+            <form class="contact-form" action="https://formspree.io/f/your_form_id_here" method="POST">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+            </form>
+            <p style="margin-top: 15px; font-size: 0.8rem; color: #888; text-align: center;">
+                * Create an account on <a href="https://formspree.io/" target="_blank"
+                    style="color: var(--accent-color);">Formspree</a> and replace 'your_form_id_here' in the code to
+                receive emails.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Ved Ringne. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
